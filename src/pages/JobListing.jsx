@@ -6,4 +6,4 @@ function JobListing() {
   )
 }
 
-export default Job-Listing;
+export default JobListing;

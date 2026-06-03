@@ -9,6 +9,9 @@ import Job from "./pages/Job";
 import PostJob from "./pages/PostJob";
 import SavedJobs from "./pages/SavedJobs";
 import MyJob from "./pages/MyJob";
+import { ThemeProvider } from "./components/theme-provider";
+import { supabase } from './utils/supabase'
+
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -20,16 +23,14 @@ const router = createBrowserRouter([
       { path: "/postjob", element: <PostJob /> },
       { path: "/savedjob", element: <SavedJobs /> },
       { path: "/myjobs", element: <MyJob /> },
-
-     
-     
-     
-     
     ],
   },
 ]);
 function App() {
-  return <RouterProvider router={router} />;
+  return(
+  <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <RouterProvider router={router} />
+  </ThemeProvider>)
 }
 
 export default App;
