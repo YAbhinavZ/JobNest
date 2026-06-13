@@ -7,7 +7,7 @@ function Header() {
   return (
       <nav className='py-4 px-4  flex justify-between items-center'>
         <Link>
-            <img src='/Logo.png' className='h-20 px-5'/>
+            <img src='./logo.png' className='h-20 px-5'/>
         </Link>
        {/* <Button variant='outline'>Login</Button> */}
        {/* <Show when="signed-out">
