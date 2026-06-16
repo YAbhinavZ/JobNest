@@ -79,48 +79,43 @@ function LandingPage() {
       <img src="/banner.jpeg" className="w-full"></img>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
-  <Card className="bg-background border rounded-2xl hover:border-primary transition-colors">
-    <CardHeader>
-      <CardTitle className="text-xl font-semibold">
-        For Job Seekers
-      </CardTitle>
-    </CardHeader>
+        <Card className="bg-background border rounded-2xl hover:border-primary transition-colors">
+          <CardHeader>
+            <CardTitle className="text-xl font-semibold">
+              For Job Seekers
+            </CardTitle>
+          </CardHeader>
 
-    <CardContent>
-      <p className="text-muted-foreground">
-        Search jobs, track applications, and manage your career in one place.
-      </p>
+          <CardContent>
+            <p className="text-muted-foreground">
+              Search jobs, track applications, and manage your career in one
+              place.
+            </p>
 
-      <Button
-        variant="link"
-        className="px-0 mt-4"
-      >
-        Explore Jobs →
-      </Button>
-    </CardContent>
-  </Card>
+            <Button variant="link" className="px-0 mt-4">
+              Explore Jobs →
+            </Button>
+          </CardContent>
+        </Card>
 
-  <Card className="bg-background border rounded-2xl hover:border-primary transition-colors">
-    <CardHeader>
-      <CardTitle className="text-xl font-semibold">
-        For Employers
-      </CardTitle>
-    </CardHeader>
+        <Card className="bg-background border rounded-2xl hover:border-primary transition-colors">
+          <CardHeader>
+            <CardTitle className="text-xl font-semibold">
+              For Employers
+            </CardTitle>
+          </CardHeader>
 
-    <CardContent>
-      <p className="text-muted-foreground">
-        Post openings, review candidates, and hire efficiently.
-      </p>
+          <CardContent>
+            <p className="text-muted-foreground">
+              Post openings, review candidates, and hire efficiently.
+            </p>
 
-      <Button
-        variant="link"
-        className="px-0 mt-4"
-      >
-        Post a Job →
-      </Button>
-    </CardContent>
-  </Card>
-</section>
+            <Button variant="link" className="px-0 mt-4">
+              Post a Job →
+            </Button>
+          </CardContent>
+        </Card>
+      </section>
       <Accordion type="single" collapsible defaultValue="item-1">
         {faqs.map((faq, index) => {
           return (
